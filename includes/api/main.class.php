@@ -100,7 +100,6 @@ class WMain {
 	public static function getComponent(){
 
 		if (!pega("option")) {
-	   
 			$menu = new Menu();
 	   
 			if (empty(WMain::$Itemid)) {
@@ -122,6 +121,7 @@ class WMain {
 			}
 				
 		}
+
 		return pega("option");
 	}
 

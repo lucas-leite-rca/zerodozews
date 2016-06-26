@@ -50,21 +50,21 @@ class WConfig {
 	// ===========================================================
 	// Mail Configs
 	// ===========================================================
-	public static $mailFrom = "email@gmail.com"; // Em caso de envio SMTP, este e-mail deve pertencer ao mesmo dom?nio de $smtpUser
-	public static $mailTo   = "email@gmail.com";
-	public static $mailContato = "email@gmail.com";
+	public static $mailFrom = "no-reply@mailtrap.io"; // Em caso de envio SMTP, este e-mail deve pertencer ao mesmo dom?nio de $smtpUser
+	public static $mailTo   = "no-reply@mailtrap.io";
+	public static $mailContato = "no-reply@mailtrap.io";
 	public static $mailSend = "smtp"; // "mail", "sendmail" ou "smtp"
 	public static $mailDebug = true;
 
 	// ===========================================================
 	// SMTP Configs
 	// ===========================================================
-	public static $smtpHost     = "smtp.gmail.com.br";
+	public static $smtpHost     = "mailtrap.io";
 	public static $smtpAuth     = true;
-	public static $smtpTls      = true;
-	public static $smtpPort     = 587;
-	public static $smtpUser     = "email@gmail.com";
-	public static $smtpPassword = "site";
+	public static $smtpTls      = false;
+	public static $smtpPort     = 465;
+	public static $smtpUser     = "3c206f6653323c";
+	public static $smtpPassword = "2e464fa49e4dfe";
 
 	// ===========================================================
 	// Path Configs
@@ -77,8 +77,8 @@ class WConfig {
 	// ===========================================================
 	// SEO
 	// ===========================================================
-	public static $seoUrl = true;
-	public static $facebookUserModerator = "1136411860";
+	public static $seoUrl = false;
+	public static $facebookUserModerator = "";
 	public static $seoUrlDisabledFolders = array(NAME_ADMIN, "forum");
 
 	// ===========================================================

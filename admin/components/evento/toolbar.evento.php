@@ -10,15 +10,8 @@ switch (WMain::$task) {
 	default:
 		
 		$button = new stdClass();
-		$button->task   = 'novo&tipo=1';
-		$button->alt    = 'Novo Evento Pontual';
-		$button->checkSelected = false;
-		$toolbar->vButton[] = $button;		
-		
-		
-		$button = new stdClass();
-		$button->task   = 'novo&tipo=2';
-		$button->alt    = 'Novo Evento Regular';
+		$button->task   = 'novo';
+		$button->alt    = 'Novo Video';
 		$button->checkSelected = false;
 		$toolbar->vButton[] = $button;		
 		

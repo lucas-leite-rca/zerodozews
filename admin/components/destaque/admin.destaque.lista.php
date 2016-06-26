@@ -7,21 +7,15 @@ $grid->setObj($this->obj);
 
 //---------------------------------------------
 
-$col = new WAdminListaColuna("Imagem","imagem");
-$col->setImage("destaque","thumb_");
-$col->largura = 120;
-$grid->add($col);
+// $col = new WAdminListaColuna("Imagem","imagem");
+// $col->setImage("destaque","");
+// $col->largura = 120;
+// $grid->add($col);
 
 $col = new WAdminListaColuna("Título","titulo");
 $grid->add($col);
 
-$col = new WAdminListaColuna("Posição do Título","modelo");
-$col->setFuncao("defModelo");
-$col->largura = 50;
-$grid->add($col);
-
-$col = new WAdminListaColuna("Ordem","ordering");
-$col->setOrdering();
+$col = new WAdminListaColuna("Subtitulo","subtitulo");
 $grid->add($col);
 
 $col = new WAdminListaColuna("Publicado","publicado");
@@ -30,10 +24,5 @@ $grid->add($col);
 
 $grid->autoLista($rows, $total);
 $grid->show();
-
-function defModelo($v) {
-	global $modelos;
-	return $modelos[$v];
-}
 
 ?>

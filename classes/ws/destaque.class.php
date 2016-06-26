@@ -8,6 +8,7 @@ class Destaque extends WModel {
 	var $url = null;
 	var $id_background = null;
 	var $titulo = null;
+	var $subtitulo = null;
 	var $modelo = null;
 	var $ordering = null;
 

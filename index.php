@@ -44,6 +44,7 @@ WPath::init();
 WJS::init();
 
 $component = WMain::getComponent();
+
 $path = WPath::component($component);
 
 ob_start();
